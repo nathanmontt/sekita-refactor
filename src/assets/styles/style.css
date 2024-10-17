@@ -5,4 +5,17 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+.container_general header {
+  border: 3px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_general header .home img {
+  width: 10em;
+}
+.container_general header nav ul li {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
