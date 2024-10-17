@@ -1,0 +1,7 @@
+-- Possíveis dicas na hora da implementação --
+
+    - A logo não entra como um link presente na volta para página inicial. Pode ser implementada a funcionalidade;
+    - Os produtos não estão presentes na mesma página. Pode fazer o usuário se cansar de ficar clicando de produto em produto;
+    - Assim que o site é "varrido" pelo usuário, ou seja, visto por completo por ele, não há um botão para "Voltar para Cima" caso ele não tenha visto algo;
+    - A logo parece um pouco desatualizada. Pode ser possível criar outra;
+    - Na parte mobile, em "Sobre", uma das imagens possui o background repetitivo. Consertar depois;
