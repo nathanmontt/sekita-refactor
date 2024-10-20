@@ -10,10 +10,16 @@
 
 :root {
   --mainFont: "Poppins", sans-serif;
+  --w: white;
+  --b: black;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .container_general header {
-  padding: 0.8em;
+  padding: 0.5em;
   position: fixed;
   top: 0;
   right: 0;
@@ -25,18 +31,39 @@
 .container_general header .home img {
   width: 10em;
 }
-.container_general header nav {
-  display: flex;
-}
-.container_general header nav .open-menu {
-  width: 3em;
+.container_general header nav #open-menu {
   cursor: pointer;
+  width: 2em;
 }
-.container_general header nav ul {
-  display: none;
+.container_general header nav .container-options {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--w);
 }
-.container_general header nav ul li {
-  text-align: right;
+.container_general header nav .container-options ul li {
+  font-weight: 300;
+  font-family: var(--mainFont);
+  padding: 1em;
+  text-align: center;
+}
+.container_general header nav .container-options ul li a {
+  color: var(--b);
+}
+.container_general header nav .container-options ul li a:hover {
+  font-weight: 500;
+}
+.container_general header nav .container-options #close-menu {
+  cursor: pointer;
+  margin-top: 5em;
+  width: 2em;
 }
 .container_general main #home {
   min-height: 100vh;

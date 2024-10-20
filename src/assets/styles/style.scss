@@ -14,12 +14,17 @@
 
 :root {
     --mainFont: "Poppins", sans-serif;
+    --w: white;
+    --b: black;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .container_general {
     header {
-        padding: .8em;
-        
+        padding: .5em;
         position: fixed;
         top: 0;
         right: 0;
@@ -28,24 +33,52 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .home {
-            img {
-                width: 10em;
-            }
-        }
+        .home { img { width: 10em; } }
 
         nav {
-            display: flex;
-            .open-menu {
-                width: 3em;
+            #open-menu {
                 cursor: pointer;
+                width: 2em;
             }
 
-            ul {
-                display: none;
-                li {
-                    text-align: right;
-                    a {}
+            .container-options{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // place-items: center;
+                
+                min-height: 100vh;
+                
+                background-color: var(--w);
+                
+                ul {
+                    li {
+                        font-weight: 300;
+                        font-family: var(--mainFont);
+                        padding: 1em;
+                        text-align: center;
+
+                        a {
+                            color: var(--b);
+
+                            &:hover {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                
+                #close-menu {
+                    cursor: pointer;
+                    margin-top: 5em;
+                    width: 2em;
                 }
             }
         }
@@ -53,11 +86,6 @@
 
     main {
         #home {
-            // .blackness {
-            //     min-height: 100vh;
-            //     background-color: #0000000b;
-            // }
-
             min-height: 100vh;
             background-image: url("../images/backgrounds/anudeep-unsplash.jpg");
             background-repeat: no-repeat;
